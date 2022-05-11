@@ -10,7 +10,7 @@ const Heading = ({ text }) => {
 
   return (
     <div className="">
-      <h2 className="text-2xl dark:text-yellow-200 text-yellow-800 text-center mt-6 mb-16 font-bold" data-aos="fade-up" >
+      <h2 className="text-4xl capitalize dark:text-gray-200 text-gray-800 text-center mt-6 mb-16 font-bold" data-aos="fade-up" >
         {text}
       </h2>
     </div>

@@ -1,0 +1,74 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .services {
+    @include flex;
+    padding: 4rem 0;
+    flex-direction: column;
+  }
+  
+  .container {
+    @include flex;
+    flex-direction: column;
+    max-width: 95%;
+  }
+  
+  .service {
+    @include flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    max-width: 350px;
+    min-height: 20rem;
+    margin: 1rem;
+    margin-top: 2rem;
+   // padding: 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+    &:hover {
+      transform: translateY(-5px);
+    }
+    h3,
+    p {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    h3 {
+      font-size: 1.3em;
+      font-weight: 900;
+    }
+  }
+  
+  
+  .icon_wrapper {
+    @include flex;
+    flex-direction: column;
+    height: 80px;
+    width: 80px;
+    background: #fff;
+    border-radius: 100px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin-bottom: 1rem;
+    padding: 10px;
+  }
+  
+  .icon {
+    color: #191919;
+    font-size: 35px;
+  }
+  
+  @media (min-width: 688px) {
+    .container {
+      // flex-direction: row;
+      // flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .service {
+      max-width: 25rem;
+      height: 400px;
+    }
+  }
