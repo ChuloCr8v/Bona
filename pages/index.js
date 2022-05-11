@@ -8,6 +8,7 @@ import Projects from '../components/Projects'
 import About from '../components/About'
 import Contact from '../components/contact'
 import Resume from '../components/Resume'
+import Promises from '../components/Promises'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <WhyMe />
         <About />
         <Projects />
+        <Promises />
         <Contact />
       </main>
     </div>
