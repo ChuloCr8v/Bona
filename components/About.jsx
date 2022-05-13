@@ -14,7 +14,7 @@ const About = () => {
   }, []);
 
   return (
-    <section data-aos="fade-up" className={styles.about}>
+    <section data-aos="fade-up" className="" id={styles.about} >
       <div className={styles.container}>
         <Heading text={"About Me"} />
         <div className={styles.content_container}>
@@ -26,20 +26,19 @@ const About = () => {
               help individuals and brands improve their online presence through
               the creation of bespoke websites as well as SEO services.
             </p>
-            <a
-              href="https://github.com/ChuloCr8v"
-              className={styles.portfolio_link}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link 
+              href="/contact"
               data-aos="fade-up"
             >
-              Github Profile <FaArrowRight className={styles.icon} />
-            </a>
+              <a id={styles.portfolio_link} className="dark:text-gray-800 text-gray-200 dark:bg-gray-200 bg-gray-800 " >
+             Hire Me <FaArrowRight className={styles.icon} />
+              </a>
+            </Link>
           </div>
 
           <div className={styles.stacks}>
             <h2
-              className="text-center text-xl text-yellow-200 font-bold mb-6 "
+              className="text-center text-xl font-bold mb-6 "
               data-aos="fade-up"
             >
               Some Tools That I Work With
@@ -57,47 +56,6 @@ const About = () => {
                   <figcaption>{stack.name}</figcaption>
                 </figure>
               ))}
-
-              {/*  <figure data-aos="fade-up">
-                  <img src={Css.src} alt="html5" height="60" width="60" className={styles.stack_icon} />
-                  <figcaption>CSS3</figcaption>
-                </figure>
-                  
-              
-                <figure data-aos="fade-up">
-                  <img src={Sass.src} alt="html5" height="60" width="60" className={styles.stack_icon} />
-                  <figcaption>Sass</figcaption>
-                </figure>
-                  
-              
-                <figure data-aos="fade-up">
-                  <img src={Boostrap.src} alt="html5" height="60" width="60" className={styles.stack_icon} />
-                  <figcaption>Boostrap</figcaption>
-                </figure>
-                  
-              
-                <figure data-aos="fade-up">
-                  <img src={Tailwind.src} alt="html5" height="60" width="60" className={styles.stack_icon} />
-                  <figcaption>Tailwind</figcaption>
-                </figure>
-                  
-              
-                <figure data-aos="fade-up">
-                  <img src={Js.src} alt="html5" height="60" width="60" className={styles.stack_icon} />
-                  <figcaption>JavaScript</figcaption>
-                </figure>
-                  
-              
-                <figure data-aos="fade-up">
-                  <img src={React.src} alt="html5" height="60" width="60" className={styles.stack_icon} />
-                  <figcaption>ReactJs</figcaption>
-                </figure>
-                  
-              
-                <figure data-aos="fade-up">
-                  <img src={Next.src} alt="html5" height="60" width="60" className={styles.stack_icon} />
-                  <figcaption>NextJs</figcaption>
-                </figure>*/}
             </div>
           </div>
         </div>

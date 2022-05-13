@@ -1,7 +1,5 @@
-.about {
- // background: linear-gradient(45deg, #5460F4, #f454b0);
-  box-shadow: 3px 3px 8px 2px rgb(0,0,0,0.2);
-  color: white;
+#about {
+  box-shadow: 3px 3px 8px 2px rgb(0,0,0,0.4);
 }
 
 .container {
@@ -16,7 +14,6 @@
   margin-top: 2.5rem;
   text-align: left;
   span {
-    color: yellow;
     font-size: 1.2rem;
     font-weight: bold;
   }
@@ -25,22 +22,20 @@
   }
 }
 
-.portfolio_link {
+#portfolio_link {
   display: flex;
   align-items: center;
-  color: white;
-  background: #000;
   border-radius: 10px;
   text-align: center;
   padding: 0.5rem 1rem;
   border: 1px black solid;
-  width: 220px;
+  width: 150px;
   margin-block: 2rem;
+  transition: all 0.3s ease-in-out ;
   &:hover {
-    background: transparent;
-    color: black;
+    transform: scale(1.1);
     border: 1px black solid;
-    box-shadow: 3px 3px 16px 2px rgb(0,0,0,0.2);
+    box-shadow: 3px 3px 16px 2px rgb(0,0,0,0.6);
   }
   .icon {
     margin-left: 1rem;
@@ -72,7 +67,6 @@
     margin-top: 2rem;
   }
   .stack_icon {
-    background: white;
     padding: .3rem;
     border-radius: 100%;
   }

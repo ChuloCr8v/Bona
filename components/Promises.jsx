@@ -1,22 +1,22 @@
 import styles from "../styles/Services.module.scss";
-import { FaGlobe, FaShoppingCart, FaPen, FaBlog, FaSuitcase, FaNewspaper} from "react-icons/fa";
+import Image from "next/image";
 import Heading from "./Heading";
 
 const Promises = () => {
   
   const promise = [
     {
-      icon: <FaGlobe className={styles.icon} />, 
+      icon: "/images/comm.svg", 
       title: 'Great Communication ', 
       description: 'Communication is the bedrock of any successful transaction. I promise to keep you up to date with progresses along the way, as well as listen attentively to whatever you have to say.'
     }, 
     {
-      icon: <FaShoppingCart className={styles.icon} />, 
+      icon:"/images/delivery.svg", 
       title: 'Fast Delivery', 
       description: 'I have a passion for meeting up with deadlines. I promise to have your delivery ready before the due date and time. I understand the importance of meeting up in time for any business.'
     }, 
     {
-      icon: <FaShoppingCart className={styles.icon} />, 
+      icon: "/images/available.svg", 
       title: 'Full Availability', 
       description: "I will always be there to attend to your concerns whenever you have any. I'm only a message away"
     }, 
@@ -30,7 +30,7 @@ const Promises = () => {
         {promise.map(item => ( 
           <div className={styles.service} key={item.title}>
             <div className={styles.icon_wrapper}>
-              {item.icon}
+              <img src={item.icon} alt={item.title} height="350" width="500" className={styles.icon} />
             </div>
             <h3>{item.title}</h3>
             <p>{item.description}</p>

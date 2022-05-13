@@ -20,29 +20,28 @@ const Projects = () => {
       <Heading text={"Projects"} />
       <div className={styles.container}>
         {Project.map((item, index) => (
-          <div key="index" className=" dark:text-white text-gray-800 dark:border-white dark:border-2" id={styles.project} data-aos="fade-up">
-            <img src={item.img} height={500} width={600} alt={item.name} />
-            <div className="details text-center py-8 ">
-              <h2 className="title text-xl text-red-800 dark:text-yellow-400 font-bold text-uppercase">{item.title}</h2>
-              <div className="link_container flex justify-center items-center my-8 space-x-3">
-                <a href={item.demo} target="_blank" rel="noopener noreferrer"><FaGlobe className="relative text-3xl hover:text-yellow-300" /></a>
-                <a href={item.github} target="_blank" rel="noopener noreferrer"><FaGithub className="relative text-3xl hover:text-yellow-300" /></a>
-              </div>
-              <div className="description text-justify mb-8">
+          <div key="index" className=" rounded-xl text-gray-800 text-gray-800 dark:text-gray-200" id={styles.project} data-aos="fade-up">
+            <img src={item.img} height={400} width={500} alt={item.name} />
+            <div className="py-10">
+              <h2 className="text-2xl font-black text-center mb-2">{item.title}</h2>
+              <div className="mt-6 mb-4">
                 <p>{item.description}</p>
               </div>
-              <div className="tools text-gray-200 dark:text-gray-800 flex justify-center items-center mb-8 space-x-4 flex-wrap">
-                <p className="bg-gray-900 dark:bg-white rounded px-4 py-2 mt-4 ">{item.stackOne}</p>
-                <p className="bg-gray-900 dark:bg-white rounded px-4 py-2 mt-4">{item.stackTwo}</p>
-                <p className="bg-gray-900 dark:bg-white rounded px-4 py-2 mt-4">{item.stackThree}</p>
-                <p className="bg-gray-900 dark:bg-white rounded px-4 py-2 mt-4">{item.stackFour}</p>
+              <div className="flex justify-between align-center mt-6">
+                <div className="">
+                  <h3 id={styles.sub} className="relative text-xl mb-3">
+                  <div className="border-2 bg-red-600  h-1 w-2 border-red-600 absolute left-0 bottom-0" ></div>
+                    Built With 
+                   </h3>
+                  <li className="">{item.stackOne}</li>
+                  <li className="">{item.stackTwo}</li>
+                  <li className="">{item.stackThree}</li>
+                </div>
+                <div className="mt-8">
+                  <a href={item.demo} target="_blank" rel="noopener noreferrer" className="rounded py-3 px-6 shadow-2xl bg-gray-800 text-gray-200 hover:scale-110" >View</a>
+                </div>  
               </div>
-              <ul className="features text-left ml-6 space-y-2 list-decimal">
-                <li> {item.featureOne} </li>
-                <li> {item.featureTwo} </li>
-                <li> {item.featureThree} </li>
-                <li> {item.featureFour} </li>
-              </ul>
+             
             </div>
           </div>
         ))}

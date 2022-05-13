@@ -7,8 +7,10 @@ import WhyMe from '../components/WhyMe'
 import Projects from '../components/Projects'
 import About from '../components/About'
 import Contact from '../components/contact'
-import Resume from '../components/Resume'
 import Promises from '../components/Promises'
+import SocialButtons from '../components/SocialButtons'
+import Testimonials from '../components/Testimonials'
+import Cta from '../components/Cta'
 
 export default function Home() {
   return (
@@ -21,13 +23,15 @@ export default function Home() {
 
       <main style={{overflow: 'hidden'}} >
         <Hero />
-        <Resume />
         <Services />
         <WhyMe />
         <About />
         <Projects />
         <Promises />
+        <Testimonials />
+        <Cta />
         <Contact />
+        <SocialButtons />
       </main>
     </div>
   )
