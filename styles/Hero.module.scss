@@ -11,7 +11,7 @@
 #hero {
   @include flex;
   flex-direction: column;
-  box-shadow: 3px 3px 8px 2px rgb(0,0,0,0.2);
+  box-shadow: 3px 3px 8px 2px rgb(0, 0, 0, 0.2);
 }
 
 .intro {
@@ -50,15 +50,34 @@
 }
 
 @keyframes animate {
-
-  0%, 100% {
-    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      15% 44%,
+      32% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
   }
   50% {
-    clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    clip-path: polygon(
+      0 60%,
+      16% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
   }
 }
-
 
 .btns {
   display: flex;
@@ -80,7 +99,6 @@
   &:hover {
     border: 2px #f85151 solid;
     background: transparent;
-    ;
   }
 }
 
@@ -88,12 +106,10 @@
   background: transparent;
   &:hover {
     background: linear-gradient(45deg, #f85151, #f454b0);
-    ;
   }
 }
 
 @media (min-width: 688px) {
-
   .intro {
     margin-top: 0;
   }

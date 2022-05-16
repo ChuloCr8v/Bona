@@ -61,13 +61,18 @@
 }
 
 .name {
+  font-weight: 700;
   font-size: 1em;
 }
 
 @media(min-width: 688px) {
   .wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+  }
+
+  .testimony {
+    margin: 5px;
   }
 }
