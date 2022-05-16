@@ -37,10 +37,10 @@ const Services = () => {
         {why.map((item) => (
           <div className={styles.service} key={item.heading}>
             <div className={styles.icon_wrapper}>
-              <Image src={item.icon} alt={item.title} height="350" width="500" className={styles.icon}/>
+              <Image src={item.icon} alt={item.title} height="350" width="500" className={styles.icon} data-aos="fade-in" />
             </div>
-            <h3>{item.heading}</h3>
-            <p>{item.description}</p>
+            <h3 data-aos="fade-up" >{item.heading}</h3>
+            <p data-aos="fade-up">{item.description}</p>
           </div>
         ))}
       </div>

@@ -2,13 +2,13 @@ const project = [
   
   {
     title: 'Cleverdevelopers Website Agency',
-    img: '/big.jpg',
+    img: '/images/clever.jpeg',
     github: "https://github.com/ChuloCr8v/Bigshotz",
     demo: "https://cleverdevelopers.vercel.app/",
     description: "This is an agency website, designed basically for a website development agency. It spots a trendy design and describes the services offered by the agency.",
-    stackOne: "WordPress",
-    stackTwo: "Elementor",
-    stackThree: "Slider", 
+    stackOne: "Next.js",
+    stackTwo: "Sass",
+    stackThree: "Html", 
     featureOne: "Contains different sections including hero, contact, work tools and pictures gallery.",
     featureTwo: "Contains different pictures categories including nature, wedding, people and random images.",
     featureThree: "Visitors can search for random pictures with the search bar included in the random pictures page.",
@@ -28,7 +28,7 @@ const project = [
     featureThree: "Visitors can search for random pictures with the search bar included in the random pictures page.",
     featureFour: "Mobile Responsive.",
   },
-  {
+ /* {
     title: 'Shop24seven Ecommerce Store',
     img: '/big.jpg',
     github: "https://github.com/ChuloCr8v/Bigshotz",
@@ -41,10 +41,10 @@ const project = [
     featureTwo: "Contains different pictures categories including nature, wedding, people and random images.",
     featureThree: "Visitors can search for random pictures with the search bar included in the random pictures page.",
     featureFour: "Mobile Responsive.",
-  },
+  },*/
   {
     title: 'Paul Ray Photography',
-    img: '/big.jpg',
+    img: '/images/ray.png',
     github: "https://github.com/ChuloCr8v/Bigshotz",
     demo: "https://dev-paul-ray-photography.pantheonsite.io/",
     description: "This is a photography portfolio website designed to showcase the profile of a photographer. It contains details about the photographer such as skills, services, picture gallery and contact details..",
@@ -58,7 +58,7 @@ const project = [
   },
   {
     title: 'Gist Realm News Blog',
-    img: '/big.jpg',
+    img: '/images/gist.png',
     github: "https://github.com/ChuloCr8v/Bigshotz",
     demo: "https://dev-gistrealm.pantheonsite.io",
     description: "This is a news website built with WordPress content management system. It contains different news sections as well as slider animations for trending news updates.",
@@ -72,9 +72,9 @@ const project = [
   },
   {
     title: 'Fit-Fam Gym',
-    img: '/big.jpg',
+    img: '/images/gym.png',
     github: "https://github.com/ChuloCr8v/Bigshotz",
-    demo: "fit-fam.netlify.app",
+    demo: "https://fit-fam.netlify.app",
     description: "This is gym website that showcasesthe services of a gym brand. It contains basic details about the gym facility. You can see such sections as Hero, About, Services, Contact, etc.",
     stackOne: "Html5",
     stackTwo: "Css3",

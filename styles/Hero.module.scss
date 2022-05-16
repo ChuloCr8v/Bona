@@ -30,7 +30,7 @@
       font-size: 3.5rem;
       font-family: Times New Roman !important;
       text-align: left;
-      -webkit-text-stroke: 2px #ff2768;
+      -webkit-text-stroke: 2px #c6c6c6;
       font-weight: 900;
       overflow: hidden;
       span {
@@ -43,6 +43,10 @@
       }
     }
   }
+}
+
+.stacks {
+  margin-top: 1.2rem;
 }
 
 @keyframes animate {
@@ -58,7 +62,7 @@
 
 .btns {
   display: flex;
-  margin-top: 1rem;
+  margin-top: 2rem;
   * + * {
     margin-left: 20px;
   }
@@ -69,9 +73,10 @@
   text-align: center;
   width: 150px;
   background: linear-gradient(45deg, #f85151, #f454b0);
-  padding: 0.3rem 0.8rem;
+  padding: 0.6rem 0.8rem;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
+  border: 2px #f85151 solid;
   &:hover {
     border: 2px #f85151 solid;
     background: transparent;
@@ -80,7 +85,6 @@
 }
 
 #btn_transparent {
-  border: 2px #f85151 solid;
   background: transparent;
   &:hover {
     background: linear-gradient(45deg, #f85151, #f454b0);

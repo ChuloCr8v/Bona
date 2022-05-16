@@ -38,22 +38,22 @@ const Contact = () => {
             <form data-aos="fade-up" action="https://formsubmit.co/chulocr8v@gmail.com" method="POST" target="_blank" rel="noopener noreferrer" >
               <input type="hidden" name="_next" value="http://cdev.vercel.app/sent" />
               <div className={styles.form_group}>
-                <label htmlFor="full name" className="font-bold text-gray-800">Full Name</label>
+                <label htmlFor="full name" className="font-bold ">Full Name</label>
                 <input className="text-gray-800 dark:text-gray-200" type="text" name="name" placeholder="Enter your full name here" required />
               </div>
 
               <div className={styles.form_group}>
-                <label htmlFor="email" className="font-bold text-gray-800">Email</label>
-                <input className="text-gray-800 dark:text-gray-200" type="text" nname="email" placeholder="Enter your email address here" required />
+                <label htmlFor="email" className="font-bold">Email</label>
+                <input className="dark:text-gray-200 w-full " type="text" nname="email" placeholder="Enter your email address here" required />
               </div>
 
               <div className={styles.form_group}>
-                <label htmlFor="location" className="font-bold text-gray-800">Location</label>
+                <label htmlFor="location" className="font-bold">Location</label>
                 <input className="text-gray-800 dark:text-gray-200" type="text" name="location" placeholder="Enter your Location here" required />
               </div>
 
               <div className={styles.form_group}>
-                <label htmlFor="message" className="font-bold text-gray-800">Message</label>
+                <label htmlFor="message" className="font-bold">Message</label>
                 <textarea className="text-gray-800 dark:text-gray-200" name="message" placeholder="Your message ☺" rows="7" cols="25" required />
               </div>
 

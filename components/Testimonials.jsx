@@ -37,7 +37,7 @@ const Testimonials = () => {
           <div className={styles.wrapper}>
             {
               clients.map((testimony) => (
-                <div className={styles.testimony} key={testimony.name}>
+                <div className={styles.testimony} key={testimony.name} data-aos="fade-up" >
                   <FaQuoteLeft className={styles.icon} />
                   <p className={styles.comment}>{testimony.comment} </p>
                   <div className={styles.name_container}>

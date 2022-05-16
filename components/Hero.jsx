@@ -27,12 +27,12 @@ const Hero = () => {
         <div className={styles.content_container && styles.hero_content_container}>
 
           <div className={styles.intro}>
-            <p className={styles.h2}> Hi, </p>
-            <h1 className="dark:text-gray-200">I&#39;m <span id={styles.name} className="text-transparent">Dev. Chex.<span id={styles.name} className="text-red-500">Dev. Chex. </span></span></h1>
+            <p className={styles.h2} data-aos="fade-in" > Hi, </p>
+            <h1 className="dark:text-gray-200" data-aos="fade-in" >I&#39;m <span id={styles.name} className="text-transparent">Dev. Chex.<span id={styles.name} className="text-gray-500">Dev. Chex. </span></span></h1>
           </div>
           <div className={styles.stacks}>
-            <p> a website developer helping people turn their ideas into powerful websites that provides solutions and values to businesses and brands.</p>
-            <div className={styles.btns} >
+            <p className="md:w-2/3" data-aos="fade-in" > A website developer helping people turn their ideas into powerful websites that provides solutions and values to businesses and brands.</p>
+            <div className={styles.btns}  data-aos="fade-in" >
                <Link href="/services">
                 <a className="text-gray-200 hover:text-gray-800 dark:hover:text-gray-200" id={styles.btn} >
                   Services

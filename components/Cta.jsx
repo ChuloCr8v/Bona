@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 const Cta = () => { 
   return ( 
-      <section className="flex flex-col shadow-2xl" id={styles.cta}>
+      <section className="flex flex-col shadow-2xl" id={styles.cta} data-aos="slide-left" >
         <div className="container flex flex-col">
         <div className="flex flex-col md:flex-row justify-center items-center md:justify-between ">
           <div className="flex flex-col align-center justify-center">
