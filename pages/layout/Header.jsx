@@ -11,6 +11,11 @@ import {motion} from 'framer-motion'
 const Header = () => {
   //light and dark theme config
   const {systemTheme, theme, setTheme} = useTheme()
+  const [showMenu, setShowMenu] = useState(false);
+  const [dark, setDark] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const [scroll, setScrollY] = useState('') 
   
   const renderThemeChanger = () => {
     const currentTheme = theme === 'system' ? systemTheme : theme;
@@ -21,18 +26,13 @@ const Header = () => {
       setDark(false)
     }
   }
-  
-  const [showMenu, setShowMenu] = useState(false);
-  const [dark, setDark] = useState(false);
-  const [shadow, setShadow] = useState(false);
-    const [showHeader, setShowHeader] = useState(true);
-  const [scroll, setScrollY] = useState('') 
-  
+ 
   useEffect(() => { 
     setScrollY(window.pageYOffset)
   }, []) 
   
   let prevPos = scroll;
+  
   const header = () => { 
     let currentPos = window.pageYOffset;
     if(currentPos > prevPos) { 
@@ -48,7 +48,7 @@ const Header = () => {
     return () => { 
       window.removeEventListener('scroll', header); 
     }; 
-  }, [])
+  })
 
   
   const headerShadow = () => {
@@ -77,8 +77,10 @@ const Header = () => {
   return(
     <header id={styles.header} className="bg-white dark:bg-gray-900 md:py-4 mb-20" style={{boxShadow: `${shadow ? '3px 3px 32px 1px rgb(0,0,0,0.06)' : ''}`, transform: `${showHeader ? 'translateY(-100px)' : ''}`}} >
      <div className={styles.container}>
-       <Link href="/" className={styles.logo}>
+       <Link href="/" >
+        <a className={styles.logo}>
           <Image src={Logo} alt="dev chex logo" height="40" width="30" />
+        </a>
        </Link>
        
        <div className={styles.bar_container}>

@@ -1,5 +1,5 @@
 import styles from '../styles/Projects.module.scss'
-import Project from './project'
+import Project from './Project'
 import Image from 'next/image'
 import Logo from '../public/logo.png'
 import AOS from 'aos'
@@ -21,7 +21,7 @@ const Projects = () => {
       <div className={styles.container}>
         {Project.map((item, index) => (
           <div key="index" className=" rounded-xl text-gray-800 text-gray-800 dark:text-gray-200" id={styles.project} data-aos="fade-up">
-            <img src={item.img} height={400} width={500} alt={item.name} />
+            <Image src={item.img} height={400} width={500} alt={item.name} />
             <div className="py-10">
               <h2 className="text-2xl font-black text-center mb-2">{item.title}</h2>
               <div className="mt-6 mb-4">

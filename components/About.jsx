@@ -46,7 +46,7 @@ const About = () => {
             <div className={styles.stack_icons}>
               {Stacks.map((stack) => (
                 <figure data-aos="fade-up" key="index">
-                  <img
+                  <Image
                     src={stack.img}
                     alt={stack.name}
                     height="60"

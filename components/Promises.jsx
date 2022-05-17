@@ -30,7 +30,7 @@ const Promises = () => {
         {promise.map(item => ( 
           <div className={styles.service} key={item.title}>
             <div className={styles.icon_wrapper}>
-              <img src={item.icon} alt={item.title} height="350" width="500" className={styles.icon} data-aos="fade-in" />
+              <Image src={item.icon} alt={item.title} height="350" width="500" className={styles.icon} data-aos="fade-in" />
             </div>
             <h3 data-aos="fade-up" >{item.title}</h3>
             <p data-aos="fade-up" >{item.description}</p>
