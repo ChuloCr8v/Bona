@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-/*import styles from '../styles/Home.module.css'*/
 import Hero from '../components/Hero'
 import Services from '../components/Services'
 import WhyMe from '../components/WhyMe'
@@ -22,16 +21,7 @@ export default function Home() {
       </Head>
 
       <main style={{overflow: 'hidden'}} >
-        <Hero />
-        <Services />
-        <WhyMe />
-        <About />
-        <Projects />
-        <Promises />
-        <Testimonials />
-        <Cta />
-        <Contact />
-        <SocialButtons />
+       
       </main>
     </div>
   )

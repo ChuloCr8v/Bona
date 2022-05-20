@@ -45,12 +45,6 @@ const Projects = () => {
             </div>
           </div>
         ))}
-        {/*
-        <div className={styles.hire} data-aos="fade">
-          <Image src={Logo} height={300} width={400} alt="devchex projects" />
-          <a href="#contact" target="_blank" rel="noopener noreferrer">Hire Me</a>
-        </div>
-        */}
       </div>
     </section>
   )

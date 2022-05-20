@@ -1,6 +1,6 @@
 import Projects from '../components/Projects'
 import About from '../components/About'
-import Contact from '../components/contact'
+import Contact from '../components/Contact'
 
 const Portfolio = () => {
   return(
