@@ -21,7 +21,16 @@ export default function Home() {
       </Head>
 
       <main style={{overflow: 'hidden'}} >
-       
+        <Hero />
+        <Services />
+        <WhyMe />
+        <About />
+        <Projects />
+        <Promises />
+        <Testimonials />
+        <Cta />
+        <Contact />
+        <SocialButtons />
       </main>
     </div>
   )
