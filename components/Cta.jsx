@@ -1,4 +1,3 @@
-
 import styles from '../styles/Cta.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -7,7 +6,7 @@ const Cta = () => {
       <section className="flex flex-col shadow-2xl" id={styles.cta} data-aos="slide-left" >
         <div className="container flex flex-col">
         <div className="flex flex-col md:flex-row justify-center items-center md:justify-between ">
-          <div className="flex flex-col align-center justify-center">
+          <div className="flex flex-col align-center justify-center md:max-w-60">
             <h2 className="text-4xl capitalize text-gray-200 font-black text-center mb-4">Have an amazing website project idea? </h2>
             <p className="text-center text-xl text-gray-300">Get in Touch and let us work on it together </p>
             
